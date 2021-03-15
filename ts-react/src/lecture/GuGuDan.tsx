@@ -6,7 +6,7 @@ const GuGuDan = () => {
     const [second, setSecond] = useState(Math.ceil(Math.random() * 9))
     const [value, setValue] = useState('');
     const [result, setResult] = useState('');
-    const inputEl = React.useRef(null);
+    const inputEl = React.useRef<HTMLInputElement>(null);
     const onSubmitForm = (e) => {
         e.preventDefault();
         const input = inputEl.current;
@@ -15,8 +15,14 @@ const GuGuDan = () => {
             //정답이면 다시 문제내는 부분
             setFirst(Math.ceil(Math.random() * 9));
             setSecond(Math.ceil(Math.random() * 9));
+        } else {
+            setResult('땡');
+            setValue('');
+            input!.focus();
         }
     }
+
+
     return (
         <>
             <div>{first} 곱하기 {second} = ?</div>
@@ -25,9 +31,12 @@ const GuGuDan = () => {
                     ref={input}
                     type="number"
                     value={value}
-                    onChange={(e) => setValue(e.target.value)}
+                    onChange={(e) => setValue(e.target.value)} />
             </form>
+
+
         </>
+
     )
 }
 export default GuGuDan;

@@ -15,18 +15,23 @@
   \********************/
 /***/ (() => {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (9:16)\\nFile was processed with these loaders:\\n * ./node_modules/awesome-typescript-loader/dist/entry.js\\nYou may need an additional loader to handle the result of these loaders.\\n| var ReactDOM = require(\\\"react-dom\\\");\\n| var GuGuDan_1 = require(\\\"./GuGuDan\\\");\\n> ReactDOM.render(<GuGuDan_1[\\\"default\\\"] />, document.querySelector(\\\"#root\\\"));\\n| \");\n\n//# sourceURL=webpack://lecture/./client.tsx?");
+        eval("throw new Error(\"Module parse failed: Unexpected token (9:16)\\nFile was processed with these loaders:\\n * ./node_modules/awesome-typescript-loader/dist/entry.js\\nYou may need an additional loader to handle the result of these loaders.\\n| var ReactDOM = require(\\\"react-dom\\\");\\n| var GuGuDan_1 = require(\\\"./GuGuDan\\\");\\n> ReactDOM.render(<GuGuDan_1[\\\"default\\\"] />, document.querySelector(\\\"#root\\\"));\\n| \");\n\n//# sourceURL=webpack://lecture/./client.tsx?");
 
-/***/ })
+        /***/
+})
 
-/******/ 	});
+    /******/
+});
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./client.tsx"]();
-/******/ 	
-/******/ })()
-;
+  /******/
+  /******/
+})()
+  ;
+
+
