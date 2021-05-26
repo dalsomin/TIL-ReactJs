@@ -1,0 +1,5 @@
+
+되도록이면 ()=>{} 이런식으로 쓰자
+
+setNumber({num: prevState.num + 1})---x
+setNumber((prevState) => ({num: prevState.num + 1}))----o
